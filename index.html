@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel ="stylesheet" href = "css/bootstrap.css">
+		<link rel ="stylesheet" href = "css/font-awesome.css">
+		<link rel ="stylesheet" href = "specter_stylesheet.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+			(function ($) {
+		  $(document).ready(function(){
+
+			// hide .navbar first
+			$(".info_1").hide();
+			$(".info_2").hide();
+
+			// fade in .navbar
+			$(function () {
+				$(window).scroll(function () {
+		            // set distance user needs to scroll before we fadeIn navbar
+					if ($(this).scrollTop() > 60) {
+						$('.info_1').fadeIn();
+					} else {
+						$('.info_1').fadeOut();
+					}
+				});
+
+			});
+			$(function () {
+				$(window).scroll(function () {
+		            // set distance user needs to scroll before we fadeIn navbar
+					if ($(this).scrollTop() > 720) {
+						$('.info_2').fadeIn();
+					} else {
+						$('.info_2').fadeOut();
+					}
+				});
+
+			});
+		});
+		  }(jQuery));
+		</script>	
+	</head>
+
+
+	<body style="margin-top:10%;">
+
+		<div class="container">
+			<div class="row" id="nav_bar" style="text-align:center;font-family:'Raleway';">
+					<div class="col-md-3">
+						<a href="about.html"><span>About</span></a>
+					</div>
+					<div class="col-md-3">
+						<a><span>Kickstarter</span></a>
+					</div>
+					<div class="col-md-3">
+						<a><span>Vision</span></a>
+					</div>
+					<div class="col-md-3">
+						<a><span>Contact</span></a>
+					</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="backdrop" style="margin-top:5%;text-align:center;padding:50px;font-family:'Raleway';color:black;font-weight:20px;text-shadow:2px 2px 5px white;">
+					<div style="margin-top:8%;font-size:100px;">Canadian Summer</div>
+					<br>
+					<div style="font-size:60px;">Durable Sandal</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 info_1"></div>
+				<div></div>
+			</div>
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 info_2"></div>
+				<div></div>
+			</div>
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="container" style="border-top:1px solid grey;border-bottom:1px solid grey;">
+			<div class="row">
+				<div class="col-md-12" style="text-align:center;padding:50px;font-family:'Raleway';">
+					<span style="font-size:100px;">Summer 2017</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="container">
+			<div class="row footer">
+				<div class="col-md-4">
+					Copyright &copy; 2017 Rich Hill Design
+				</div>
+				<div class="col-md-4">
+					Home
+				</div>
+				<div class="col-md-4">
+					Email
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>
+
+
+
+
+

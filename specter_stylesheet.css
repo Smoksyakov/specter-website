@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#backdrop {
+	height: 500px;
+	background: url(images/backdrop.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.spacer {
+	height:150px;
+}
+
+.info_1 {
+	height: 500px;
+	background: url(images/sasha_sandals.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.info_2 {
+	height: 500px;
+	background: url(images/sasha_sandals.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.footer {
+	padding: 25px;
+	text-align: center;
+	font-family: 'Raleway';
+
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#about_backdrop {
+	background: url(images/about_backdrop.jpg);
+	height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+.about_p {
+	font-size: 50px;
+	padding: 50px;
+}
+
+#first_img {
+	height: 300px;
+	background: url(images/foot1.jpg);
+	background-size: cover;
+}
+
+.font_img {
+	font-size: 200px;
+	color: grey;
+	font-weight: 20px;
+	z-index: 1;
+}
+
+#second_img {
+	height: 300px;
+	background: url(images/foot2.png);
+	background-size: cover;
+}
+
+#third_img {
+	height: 300px;
+	background: url(images/foot4.jpg);
+	background-size: cover;
+}
+
+.img_desc {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(61, 61, 57, 0.72);
+	color: black;
+	visibility: hidden;
+	opacity: 1
+	transition: opacity .2s, visibility .2s;
+}
+
+#first_img:hover .img_desc {
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
+}
+
+#second_img:hover .img_desc {
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
+}
+
+#third_img:hover .img_desc {
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+
+
