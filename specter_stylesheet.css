@@ -51,7 +51,7 @@ a:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 0.5px;
   bottom: 0;
   left: 0;
   background-color: #000;
@@ -118,6 +118,9 @@ a:hover:before {
 	visibility: hidden;
 	opacity: 1
 	transition: opacity .2s, visibility .2s;
+	color: rgba(248, 247, 247, 0.9);
+	padding: 5px;
+	text-align: center;
 }
 
 #first_img:hover .img_desc {
@@ -126,16 +129,58 @@ a:hover:before {
 	cursor: pointer;
 }
 
+#first_img:hover .hover {
+	visibility: hidden;
+}
+
 #second_img:hover .img_desc {
 	visibility: visible;
 	opacity: 1;
 	cursor: pointer;
 }
 
+#second_img:hover .hover {
+	visibility: hidden;
+}
+
 #third_img:hover .img_desc {
 	visibility: visible;
 	opacity: 1;
 	cursor: pointer;
+}
+
+#third_img:hover .hover{
+	visibility: hidden;
+}
+
+.hover {
+	position: absolute;
+	color: grey;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	margin-top: 33.75%;
+	text-align: center;
+	padding: 20px;
+	font-size: 25px;
+	color: rgba(248, 247, 247, 0.9);
+}
+
+#bee_backdrop {
+	background: url(images/Bee.jpg);
+	height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+.bee_text {
+	background: url(images/bee_text.jpg);
+	background-size: cover;
+	background-attachment:;
+	background-position: 
 }
 
 

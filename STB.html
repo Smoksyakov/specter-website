@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Specter Shoes - Home </title>
+		<title>Specter Shoes - Save the Bee's</title>
 		<link rel ="stylesheet" href = "css/bootstrap.css">
 		<link rel ="stylesheet" href = "css/font-awesome.css">
 		<link rel ="stylesheet" href = "specter_stylesheet.css">
@@ -10,39 +10,32 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script>
-			(function ($) {
+	
+		(function ($) {
 		  $(document).ready(function(){
 
 			// hide .navbar first
-			$(".info_1").hide();
-			$(".info_2").hide();
+			$(".bee_text").hide();
 
 			// fade in .navbar
+
+
 			$(function () {
 				$(window).scroll(function () {
 		            // set distance user needs to scroll before we fadeIn navbar
-					if ($(this).scrollTop() > 60) {
-						$('.info_1').fadeIn();
+					if ($(this).scrollTop() > 340) {
+						$('.bee_text').fadeIn();
 					} else {
-						$('.info_1').fadeOut();
+						$('.bee_text').fadeOut();
 					}
 				});
 
 			});
-			$(function () {
-				$(window).scroll(function () {
-		            // set distance user needs to scroll before we fadeIn navbar
-					if ($(this).scrollTop() > 720) {
-						$('.info_2').fadeIn();
-					} else {
-						$('.info_2').fadeOut();
-					}
-				});
 
-			});
+
 		});
 		  }(jQuery));
-		</script>	
+		</script>
 	</head>
 
 
@@ -65,12 +58,10 @@
 			</div>
 		</div>
 
-		<div class="container">
+		<div class="container" style="margin-top:10%;">
 			<div class="row">
-				<div class="col-md-12" id="backdrop" style="margin-top:5%;text-align:center;padding:50px;font-family:'Raleway';color:black;font-weight:20px;text-shadow:2px 2px 5px white;">
-					<div style="margin-top:8%;font-size:100px;">Canadian Summer</div>
-					<br>
-					<div style="font-size:60px;">Durable Sandal</div>
+				<div class="col-md-12" id="bee_backdrop">
+					<div><h2 style="font-size:75px;margin:15% 0 25% 0;">Let's Help</h2></div>
 				</div>
 			</div>
 		</div>
@@ -79,8 +70,9 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 info_1"></div>
-				<div></div>
+				<div class="col-md-8 col-md-offset-2" style="text-align:center;">
+					<center><div style="background:rgba(238, 238, 238, 0.2);font-size:25px;padding:20px;">If the bee disappeared off the surface of the globe, then man would have only four years of life left. No more bees, no more pollination, no more plants, no more animals, no more man. - <i>Albert Einstein</i></div></center>
+				</div>
 			</div>
 		</div>
 
@@ -88,18 +80,8 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 info_2"></div>
-				<div></div>
-			</div>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="container" style="border-top:1px solid grey;border-bottom:1px solid grey;">
-			<div class="row">
-				<div class="col-md-12" style="text-align:center;padding:50px;font-family:'Raleway';">
-					<span style="font-size:100px;">Summer 2017</span>
-				</div>
+				<div class="col-md-7 bee_pic" style="padding:50px;font-size:18px;margin-top:20%;text-align:center;">The Specter Team does not only focus on providing a <span style="font-size:24px;">quality</span> product to our customers, but we have a deep interest in saving our planet. We believe we can all make a <span style="font-size:24px;">difference</span>. It is why with every purchase of a Specter Sandal, a <span style="font-size:24px;">portion</span> of the sales will go to the <span style="font-size:24px;">Save The Bee's"</span> Foundation. Together, we can help save our planet, one been at a time.</div>
+				<div class="col-md-5 bee_text" style="height:800px;"></div>
 			</div>
 		</div>
 
@@ -111,7 +93,7 @@
 					Copyright &copy; 2017 Rich Hill Design
 				</div>
 				<div class="col-md-4">
-					<a href="index.html-specter_shoes">Home</a>
+					<a href="index.html">Home</a>
 				</div>
 				<div class="col-md-4">
 					Email
@@ -119,11 +101,5 @@
 			</div>
 		</div>
 
-
-	</body>
-</html>
-
-
-
-
-
+	</body>	
+</html>	
